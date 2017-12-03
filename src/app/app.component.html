@@ -1,0 +1,18 @@
+<h1>Assignment 7.1 NgIf Directive Example</h1>
+
+<!--creating a div for Eemployee  -->
+
+<div id="login">
+  <div class="form-wrap" class="col-xs-9">
+      Name<input type="text" [(ngModel)]="Name" placeholder="FirstName" class="form-control" #fName>
+      <br>
+      Last Name<input type="text" [(ngModel)]="lastName" placeholder="LastName" class="form-control" #lName>
+      <br>
+      <button type="button" class="btn btn-large btn-block btn-primary" (click)="display(fName,lName)">Login</button>
+      <br>
+  </div>
+</div>
+
+<div *ngIf="showTitle"  class="col-xs-5" >
+    {{title}}
+</div>
